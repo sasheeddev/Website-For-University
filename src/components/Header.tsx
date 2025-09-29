@@ -144,13 +144,13 @@ export function Header() {
           <div className="container mx-auto flex items-center justify-between py-2 px-4">
             <div className="hidden md:flex items-center space-x-6 text-sm">
               {topNavItems.map((item) => (
-                <a
+                <Link
                   key={item.title}
                   href={item.href}
                   className="text-gray-600 hover:text-usw-red transition-colors"
                 >
                   {item.title}
-                </a>
+                </Link>
               ))}
             </div>
             <div className="flex items-center space-x-4">
@@ -175,7 +175,7 @@ export function Header() {
         <div className="container mx-auto flex items-center justify-between py-4 px-4">
           {/* Logo */}
           <div className="flex items-center">
-            <a href="/" className="flex items-center space-x-2">
+            <Link href="/" className="flex items-center space-x-2">
               <div className="w-12 h-12 usw-red rounded flex items-center justify-center">
                 <img src="/logo.jpg"/>
               </div>
@@ -184,7 +184,7 @@ export function Header() {
                 <h2 className="text-lg font-bold text-gray-900">Campuse</h2>
                 <p className="text-xs text-gray-600">Sri Lanka</p>
               </div>
-            </a>
+            </Link>
           </div>
 
           {/* Spacer - No desktop navigation */}
