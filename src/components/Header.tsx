@@ -4,6 +4,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu, Search, X } from "lucide-react";
+import Link from "next/link";
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -94,13 +95,13 @@ export function Header() {
             <nav className="space-y-8">
               {mainNavItems.map((item, index) => (
                 <div key={item.title} className="group">
-                  <a
+                  <Link
                     href={item.href}
                     className="block text-6xl md:text-7xl lg:text-8xl font-bold text-white hover:text-gray-300 transition-colors"
                     onClick={() => setIsMenuOpen(false)}
                   >
                     {item.title}
-                  </a>
+                  </Link>
                   <div className="w-full h-1 bg-white mt-2"></div>
                 </div>
               ))}

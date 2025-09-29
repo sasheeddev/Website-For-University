@@ -14,7 +14,10 @@ const Sheet = ({ children, open, onOpenChange }: SheetProps) => {
     <div>
       {React.Children.map(children, (child) => {
         if (React.isValidElement(child)) {
-          return React.cloneElement(child, { open, onOpenChange } as any)
+          return React.cloneElement(
+            child as React.ReactElement<SheetTriggerProps | SheetContentProps>,
+            { open, onOpenChange }
+          )
         }
         return child
       })}
@@ -22,7 +25,8 @@ const Sheet = ({ children, open, onOpenChange }: SheetProps) => {
   )
 }
 
-interface SheetTriggerProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+interface SheetTriggerProps
+  extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   asChild?: boolean
   open?: boolean
   onOpenChange?: (open: boolean) => void
@@ -65,7 +69,7 @@ const SheetContent = React.forwardRef<HTMLDivElement, SheetContentProps>(
   ({ className, children, side = "right", open, onOpenChange, ...props }, ref) => {
     if (!open) return null
 
-    const sideClasses = {
+    const sideClasses: Record<NonNullable<SheetContentProps["side"]>, string> = {
       top: "top-0 left-0 right-0 h-1/3",
       right: "top-0 right-0 bottom-0 w-80",
       bottom: "bottom-0 left-0 right-0 h-1/3",
