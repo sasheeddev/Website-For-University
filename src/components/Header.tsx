@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu, Search, X } from "lucide-react";
 import Link from "next/link";
 
@@ -13,58 +12,22 @@ export function Header() {
     {
       title: "STUDY",
       href: "/study",
-      submenu: [
-        { title: "Undergraduate", href: "/study/undergraduate-degrees" },
-        { title: "Postgraduate", href: "/study/postgraduate-degrees" },
-        { title: "Subjects", href: "/courses/course-listing" },
-        { title: "Courses", href: "/Courses" },
-        { title: "Apply", href: "/apply" },
-        { title: "Student Life", href: "/student-life" },
-        { title: "Accommodation", href: "/accommodation" },
-        { title: "Fees and Funding", href: "/money" },
-      ],
     },
     {
       title: "RESEARCH",
       href: "/research",
-      submenu: [
-        { title: "Research Areas", href: "/research/research-areas" },
-        { title: "Our Research Strategy", href: "/research/research-and-innovation-strategy-2030" },
-        { title: "Research Excellence Framework", href: "/research/research-impact/research-excellence-framework" },
-        { title: "Research Environment", href: "/research/research-environment" },
-      ],
     },
     {
       title: "INTERNATIONAL",
       href: "/international",
-      submenu: [
-        { title: "Welcome", href: "/international/welcome" },
-        { title: "Fees and Scholarships", href: "/international/fees-scholarships" },
-        { title: "How to Apply", href: "/international/welcome/apply-questions" },
-        { title: "Visas and Pre Arrival", href: "/international/visas-and-pre-arrival" },
-      ],
     },
     {
       title: "BUSINESS",
       href: "/business",
-      submenu: [
-        { title: "Professional Development", href: "/business/professional-development" },
-        { title: "Venues and Facilities", href: "/business/venues-and-facilities-hire" },
-        { title: "USW Exchange", href: "/business/usw-exchange" },
-        { title: "Our Expertise", href: "/business/our-expertise" },
-      ],
     },
     {
       title: "ABOUT US",
       href: "/about",
-      submenu: [
-        { title: "Our Locations", href: "/location" },
-        { title: "Our Structure", href: "/about/our-structure" },
-        { title: "Sustainability", href: "/about/sustainability" },
-        { title: "News", href: "/news" },
-        { title: "Events", href: "/events" },
-        { title: "University Services", href: "/services" },
-      ],
     },
   ];
 
