@@ -4,7 +4,7 @@ import { CourseCards } from "@/components/CourseCards";
 import { CourseSearchSection } from "@/components/CourseSearchSection";
 import { OpenDaysSection } from "@/components/OpenDaysSection";
 import { WhyChooseUsSection } from "@/components/WhyChooseUsSection";
-import { SouthWalesSection } from "@/components/SouthWalesSection";
+import { IUSSSection } from "@/components/IUSSSection";
 import { DiscoverMoreSection } from "@/components/DiscoverMoreSection";
 import { NewsSection } from "@/components/NewsSection";
 import { Footer } from "@/components/Footer";
@@ -19,7 +19,7 @@ export default function Home() {
         <CourseSearchSection />
         <OpenDaysSection />
         <WhyChooseUsSection />
-        <SouthWalesSection />
+        <IUSSSection />
         <DiscoverMoreSection />
         <NewsSection />
       </main>

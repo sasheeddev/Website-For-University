@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 
-export function SouthWalesSection() {
+export function IUSSSection() {
   return (
     <section className="py-20 bg-white relative overflow-hidden">
       <div className="container mx-auto px-4">
@@ -11,9 +11,9 @@ export function SouthWalesSection() {
               <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 leading-tight">
                 THIS IS
                 <br />
-                <span className="text-6xl md:text-7xl lg:text-8xl">SOUTH</span>
+                <span className="text-6xl md:text-7xl lg:text-8xl">IUSS</span>
                 <br />
-                <span className="text-6xl md:text-7xl lg:text-8xl">WALES</span>
+                <span className="text-6xl md:text-7xl lg:text-8xl">Campuse</span>
               </h2>
 
               <div className="usw-red p-8 text-white rounded-lg max-w-md">

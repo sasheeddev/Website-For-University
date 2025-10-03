@@ -17,7 +17,7 @@ export function Header() {
         { title: "Undergraduate", href: "/study/undergraduate-degrees" },
         { title: "Postgraduate", href: "/study/postgraduate-degrees" },
         { title: "Subjects", href: "/courses/course-listing" },
-        { title: "Courses", href: "/courses" },
+        { title: "Courses", href: "/Courses" },
         { title: "Apply", href: "/apply" },
         { title: "Student Life", href: "/student-life" },
         { title: "Accommodation", href: "/accommodation" },
@@ -69,15 +69,17 @@ export function Header() {
   ];
 
   const topNavItems = [
-    { title: "Courses", href: "/courses" },
+    { title: "Courses", href: "/Courses" },
     { title: "Apply", href: "/apply" },
     { title: "Open Days", href: "/opendays" },
     { title: "Current Students", href: "/current-students" },
   ];
 
   // Fullscreen Navigation Overlay
+  
   const FullscreenNav = () => {
     if (!isMenuOpen) return null;
+
 
     return (
       <div className="fixed inset-0 z-50 bg-black">
@@ -134,7 +136,7 @@ export function Header() {
         </div>
       </div>
     );
-  };
+  }; 
 
   return (
     <>

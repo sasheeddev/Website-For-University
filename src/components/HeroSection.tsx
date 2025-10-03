@@ -110,7 +110,7 @@ export function HeroSection() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
-              At the University of South Wales, we deliver courses that will change
+              At the IUSS campuse , we deliver courses that will change
               lives and our world for the better.{" "}
               <span className="text-usw-red">This is education in action.</span>
             </h2>
