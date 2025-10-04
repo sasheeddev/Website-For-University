@@ -30,7 +30,7 @@ export function Footer() {
         { title: "Student Portal", href: "" },
         { title: "Research Explorer", href: "https://pure.southwales.ac.uk/en/" },
         { title: "Term Dates", href: "/about/term-dates/" },
-        { title: "Contact Us", href: "/contact-us/" }
+        { title: "Contact Us", href: "/contactus" }
       ]
     }
   ];
