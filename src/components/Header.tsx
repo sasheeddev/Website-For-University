@@ -23,6 +23,8 @@ export function Header() {
     { title: "Apply", href: "/apply" },
     { title: "Open Days", href: "/opendays" },
     { title: "Current Students", href: "/current-students" },
+    { title: "Student", href: "/student" },
+    { title: "LMS", href: "https://lavenderblush-lapwing-692518.hostingersite.com/" },
   ];
 
   // Fullscreen Navigation Overlay
